@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/estilo.css"/>
     <title>Document</title>
 </head>
 <body>
-    <h1>***Lista de Alunos***</h1>
-
-    <table style="width: 600px; border-collapse: collapse">
-    
+    <h1>***Lista de Estudantes***</h1>
+    <table>
         <tr>
-            <th style="border: 2px solid #000; padding: 5px; text-align: center; background: #ccc;">Ra</th>
-            <th style="border: 2px solid #000; padding: 5px; text-align: center; background: #ccc;">Nome</th>
-            <th style="border: 2px solid #000; padding: 5px; text-align: center; background: #ccc;">Idade</th>
-            <th style="border: 2px solid #000; padding: 5px; text-align: center; background: #ccc;">Cpf</th>
+            <th>Ra</th>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Cpf</th>
         </tr>
 
         <?php
@@ -25,16 +24,16 @@
 
         foreach ($lista as $valores) {
             echo '<tr>';
-            echo '<td style= "border: 2px solid #000; padding: 5px; text-align: center;">' . $valores['Ra'] . '</td>';
-            echo '<td style= "border: 2px solid #000; padding: 5px; text-align: center;">' . $valores['Name'] . '</td>';
-            echo '<td style= "border: 2px solid #000; padding: 5px; text-align: center;">' . $valores['Age'] . '</td>';
-            echo '<td style= "border: 2px solid #000; padding: 5px; text-align: center;">' . $valores['Cpf'] . '</td>';
+            echo '<td>' . $valores['Ra'] . '</td>';
+            echo '<td>' . $valores['Name'] . '</td>';
+            echo '<td>' . $valores['Age'] . '</td>';
+            echo '<td>' . $valores['Cpf'] . '</td>';
             echo '</tr>';
         }
-
         ?>
         
     </table>
-    
+    <br>
+    <a href="index.php">Voltar</a>
 </body>
 </html>

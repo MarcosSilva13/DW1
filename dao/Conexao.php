@@ -1,7 +1,6 @@
 <?php
 class Conexao
 {
-
     private static $dsn = 'mysql:host=localhost;dbname=student;port=3306';
     private static $usuario = 'root';
     private static $senha = '';

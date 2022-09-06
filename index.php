@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/estilo.css"/>
     <title>Document</title>
 </head>
 <body>
+    <h1>***Lista de Estudantes***</h1>
     <?php
     require_once './modelo/Student.php';
     require_once './dao/DaoStudent.php';
@@ -33,8 +35,6 @@
 
     $lista = $dao->lista();
 
-    echo "<br>****** LISTA DE ALUNOS ******<br>";
-
     foreach ($lista as $valores) {
         echo 'RA: ' . $valores['Ra'] . '<br>';
         echo 'NOME: ' . $valores['Name'] . '<br>';
@@ -43,8 +43,6 @@
         echo '--------------------------------<br>';
     }
 
-
-
     /*foreach ($lista as $valores){
         foreach ($valores as $chave => $valor) {
             echo strtoupper($chave) . ': ' . $valor . '<br>';
@@ -52,8 +50,8 @@
         echo '--------------------------------------<br>';
     }*/
     ?>
-    <a href="formCadastroEstudante.php" style="font-size: 20px;">Cadastrar</a>
-
+    <a href="formCadastroEstudante.php">Cadastrar | </a>
+    <a href="listagem.php">Ver em tabela</a>
 </body>
 </html>
 

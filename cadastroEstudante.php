@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="estilo/estilo.css"/>
+    <title>Confimação</title>
 </head>
 <body>
     <?php
@@ -34,6 +35,6 @@
             echo '<h3>Dados ausentes ou incorretos!</h3><br>';
         }
     ?>
-    <a href="index.php" style="font-size: 20px;">Voltar</a>
+    <a href="index.php">Voltar</a>
 </body>
 </html>
