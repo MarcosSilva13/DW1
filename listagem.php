@@ -14,6 +14,7 @@
             <th>Nome</th>
             <th>Idade</th>
             <th>Cpf</th>
+            <th>Açôes</th>
         </tr>
 
         <?php
@@ -28,6 +29,7 @@
             echo '<td>' . $valores['Name'] . '</td>';
             echo '<td>' . $valores['Age'] . '</td>';
             echo '<td>' . $valores['Cpf'] . '</td>';
+            echo '<td><a id="excluir" href="excluirEstudante.php?Ra=' . $valores['Ra'] . '">Exluir</a></td>'; //talvez criar um formulario com um campo hidden e enviar 
             echo '</tr>';
         }
         ?>

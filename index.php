@@ -50,8 +50,10 @@
         echo '--------------------------------------<br>';
     }*/
     ?>
-    <a href="formCadastroEstudante.php">Cadastrar | </a>
-    <a href="listagem.php">Ver em tabela</a>
+
+    <a href="formCadastroEstudante.php" id="cad">Cadastrar</a>
+    <a href="listagem.php" id="tab">Ver em tabela</a>
+    
 </body>
 </html>
 
