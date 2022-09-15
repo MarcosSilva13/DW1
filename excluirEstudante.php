@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/estilo.css"/>
     <title>Exclusão de Estudante</title>
 </head>
 <body>
@@ -17,12 +18,13 @@
         $student = new Student($ra, null, null, null);
 
         $dao = new DaoStudent();
-
+        
         if ($dao->exclui($student)) {
-            echo 'Deletou.';
+            echo '<h3>Deletado com sucesso!</h3><br>';
         } else {
-            echo 'Deu erro!';
+            echo '<h3>Deu erro!</h3><br>';
         }
     ?>
+    <a href="index.php">Voltar</a>
 </body>
 </html>
