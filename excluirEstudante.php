@@ -7,7 +7,7 @@
     <title>Exclusão de Estudante</title>
 </head>
 <body>
-    <h1>Exclusão de Estudante</h1>
+    <h1>***Exclusão de Estudante***</h1>
     <?php
         require_once './modelo/Student.php';
         require_once './dao/Conexao.php';
