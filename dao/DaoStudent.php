@@ -28,6 +28,18 @@ class DaoStudent
         return $lista;
     }
 
+    public function listaPersonalizada($id) {
+        $lista = [];
+        $pst = Conexao::getPreparedStatement('select sub.Name, sub.NumberHour from subjects sub
+        join studentsubjects sb on sb.Subjects_IdSubject = sub.IdSubject
+        join student s on sb.Student_Ra = s.Ra
+        where s.Ra = ?;');
+        $pst->bindValue(1, $id);
+        $pst->execute();
+        $lista = $pst->fetchAll(PDO::FETCH_ASSOC);
+        return $lista;
+    }
+
     public function exclui(Student $student) {
         $sql = 'delete from student where Ra = ?;';
         $pst = Conexao::getPreparedStatement($sql);

@@ -39,6 +39,7 @@
         ?>
     </table>
     <br>
-    <a href="disciplina.php">Voltar</a>
+    <a href="formCadastroDisciplina.php">Cadastrar</a>
+    <a href="index.php">Voltar</a>
 </body>
 </html>

@@ -24,6 +24,7 @@
         $dao = new DaoStudent();
 
         $lista = $dao->lista();
+    
 
         foreach ($lista as $valores) {
             echo '<tr>';
@@ -39,6 +40,27 @@
             //echo '<td><a id="excluir" href="excluirEstudante.php?Ra=' . $valores['Ra'] . '">Exluir</a></td>';
             echo '</tr>';
         }
+
+        /*foreach ($lista as $valores) {
+            $listaDisc = $dao->listaPersonalizada($valores['Ra']);
+
+            echo '<tr>';
+            echo '<td>' . $valores['Ra'] . '</td>';
+            echo '<td>' . $valores['Name'] . '</td>';
+            echo '<td>' . $valores['Age'] . '</td>';
+            echo '<td>' . $valores['Cpf'] . '</td>';
+            foreach ($listaDisc as $disc) {
+                echo '<td>' . $disc['Name'] . '</td>';
+                echo '<td>' . $disc['NumberHour'] . '</td>';
+            }
+            echo '<td> 
+                <form action="excluirEstudante.php" method="POST">
+                <input type="hidden" name="Ra" id="Ra" value="' . $valores['Ra'] . '"/>
+                <input type="submit" id="excluir" value="Excluir"/>
+                </form></td>';
+            //echo '<td><a id="excluir" href="excluirEstudante.php?Ra=' . $valores['Ra'] . '">Exluir</a></td>';
+            echo '</tr>';
+        }*/
         ?>
     </table>
     <br>

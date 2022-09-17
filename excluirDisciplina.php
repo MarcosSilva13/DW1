@@ -25,6 +25,6 @@
             echo '<h3>Deu erro!</h3><br>';
         }
     ?>
-    <a href="disciplina.php">Voltar</a>
+    <a href="listagemDisc.php">Voltar</a>
 </body>
 </html>

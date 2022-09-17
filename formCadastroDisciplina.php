@@ -19,7 +19,7 @@
         <input type="number" name="hora" id="hora"/>
         
         <input type="submit" id="env" value="Enviar"/> 
-        <a href="disciplina.php">Voltar</a>
+        <a href="listagemDisc.php">Voltar</a>
     </form>
 </body>
 </html>

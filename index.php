@@ -26,7 +26,7 @@
     ?>
     <a href="formCadastroEstudante.php" id="cad">Cadastrar</a>
     <a href="listagem.php" id="tab">Ver em tabela</a>
-    <a href="disciplina.php" id="disc">Ver Disciplinas</a>
+    <a href="listagemDisc.php" id="disc">Ver Disciplinas</a>
 </body>
 </html>
 
