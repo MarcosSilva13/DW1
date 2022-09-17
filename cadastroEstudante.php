@@ -8,8 +8,8 @@
 </head>
 <body>
     <?php
-        require_once "./dao/DaoStudent.php";
-        require_once "./modelo/Student.php";
+        require_once './dao/DaoStudent.php';
+        require_once './modelo/Student.php';
 
         // $ra = $_POST['ra'] ?? null; perigoso
 
