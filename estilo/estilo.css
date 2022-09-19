@@ -42,6 +42,16 @@ a:hover, #env:hover {
     background: rgb(200, 0, 0);
 }
 
+#editar {
+    font-size: 18px;
+    cursor: pointer;
+    background: rgb(209, 153, 0);
+}
+
+#editar:hover {
+    background: rgb(247, 181, 0);
+}
+
 .formulario label {
     font-size: 18px;
     font-weight: bold;

@@ -20,6 +20,16 @@ class DaoStudent
         }
     }
 
+    public function localiza($id) {
+        $lista = [];
+        $pst = Conexao::getPreparedStatement('select * from student where Ra = ?;');
+        $pst->bindValue(1, $id);
+        $pst->execute();
+        $lista = $pst->fetchAll(PDO::FETCH_ASSOC);
+        return $lista;
+    }
+
+
     public function lista() {
         $lista = [];
         $pst = Conexao::getPreparedStatement('select * from student');
