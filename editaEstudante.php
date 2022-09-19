@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/estilo.css"/>
+    <title>Confimação Ediçao</title>
+</head>
+<body>
+    <?php
+        require_once './dao/DaoStudent.php';
+        require_once './modelo/Student.php';
+
+        // $ra = $_POST['ra'] ?? null; perigoso
+
+        $ra = filter_input(INPUT_POST, 'ra');
+        $nome = filter_input(INPUT_POST, 'nome');
+        $idade = filter_input(INPUT_POST, 'idade');
+        $cpf = filter_input(INPUT_POST, 'cpf');
+        echo "Ra: $ra<br>";
+        echo "Nome: $nome<br>";
+        echo "Idade: $idade<br>";
+        echo "Cpf: $cpf<br><br>";
+
+        if ($ra && $nome && $idade && $cpf) {
+            $obj = new Student($ra, $nome, $idade, $cpf);
+            $dao = new DaoStudent();
+
+            if ($dao->altera($obj)){
+                echo '<h3>Dados atualizados com sucesso!</h3><br>';
+            } else {
+                echo '<h3>Não foi possível atualizar!</h3><br>';
+            }
+        } else {
+            echo '<h3>Dados ausentes ou incorretos!</h3><br>';
+        }
+    ?>
+    <a href="listagem.php">Voltar</a>
+</body>
+</html>
