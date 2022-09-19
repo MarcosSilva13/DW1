@@ -19,13 +19,11 @@
         $lista = $dao->localiza($ra);
 
         $student = $lista[0];
-        $teste = "text";
-
-        ?>
+    ?>
 
     <h1>***Edição de Estudante***</h1>
     <form class="formulario" action="editaEstudante.php" method="POST">
-        <input type="<?= $teste ?>" name="ra" id="ra" value="<?= $student['Ra'] ?>"/>
+        <input type="hidden" name="ra" id="ra" value="<?= $student['Ra'] ?>"/>
 
         <label for="nome">Nome:</label>
         <input type="text" name="nome" id="nome"  maxlength="100" value="<?= $student['Name'] ?>"/>
