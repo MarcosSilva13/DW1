@@ -32,7 +32,7 @@
             echo '<td>' . $valores['Name'] . '</td>';
             echo '<td>' . $valores['Age'] . '</td>';
             echo '<td>' . $valores['Cpf'] . '</td>';
-            echo '<td><a id="editar" href="formEditaEstudante.php?Ra=' . $valores['Ra'] . '">Editar</a></td>';
+            echo '<td><a id="editar" href="form.php?Ra=' . $valores['Ra'] . '&valor=2">Editar</a></td>';
             echo '<td>
                 <form action="excluirEstudante.php" method="POST">
                 <input type="hidden" name="Ra" id="Ra" value="' . $valores['Ra'] . '"/>

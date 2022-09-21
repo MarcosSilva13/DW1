@@ -8,6 +8,11 @@
 </head>
 <body>
     <h1>***Cadastro de Estudante***</h1>
+
+    <?php
+        $valor = filter_input(INPUT_GET, 'valor');
+        echo $valor;
+    ?>
     <form class="formulario" action="cadastroEstudante.php" method="POST">
         <label for="ra">Ra: </label>
         <input type="number" name="ra" id="ra"/>
