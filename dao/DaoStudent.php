@@ -1,5 +1,5 @@
 <?php
-require_once './dao/Conexao.php';
+require_once 'Conexao.php';
 
 class DaoStudent
 {

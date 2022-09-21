@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/estilo.css"/>
+    <link rel="stylesheet" href="../estilo/estilo.css"/>
     <title>Exclusão de Disciplina</title>
 </head>
 <body>
     <h1>***Exclusão de Disciplina***</h1>
     <?php
-        require_once './modelo/Subjects.php';
-        require_once './dao/Conexao.php';
-        require_once './dao/DaoSubjects.php';
+        require_once '../modelo/Subjects.php';
+        require_once '../dao/DaoSubjects.php';
 
         $id = filter_input(INPUT_POST, 'IdSubject');
 

@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/estilo.css" />
+    <link rel="stylesheet" href="../estilo/estilo.css" />
     <title>Confimação</title>
 </head>
 
 <body>
     <?php
-    require_once './dao/DaoStudent.php';
-    require_once './modelo/Student.php';
+    require_once '../dao/DaoStudent.php';
+    require_once '../modelo/Student.php';
 
     $acao = filter_input(INPUT_POST, 'acao');
 
@@ -44,7 +44,7 @@
         echo '<h3>Dados ausentes ou incorretos!</h3><br>';
     }
     ?>
-    <a href="index.php">Voltar</a>
+    <a href="../index.php">Voltar</a>
 </body>
 
 </html>

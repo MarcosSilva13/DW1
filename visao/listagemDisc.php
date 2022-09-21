@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/estilo.css"/>
+    <link rel="stylesheet" href="../estilo/estilo.css"/>
     <title>Listagem</title>
 </head>
 
@@ -19,7 +19,7 @@
         </tr>
 
         <?php
-        require_once './dao/DaoSubjects.php';
+        require_once '../dao/DaoSubjects.php';
         $dao = new DaoSubjects();
 
         $listaSub = $dao->lista();
@@ -40,6 +40,6 @@
     </table>
     <br>
     <a href="formCadastroDisciplina.php">Cadastrar</a>
-    <a href="index.php">Voltar</a>
+    <a href="../index.php">Voltar</a>
 </body>
 </html>

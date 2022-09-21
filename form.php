@@ -45,7 +45,7 @@
 
     <h1><?= $h1 ?></h1>
 
-    <form class="formulario" action="cadastroEdita.php" method="POST">
+    <form class="formulario" action="./visao/cadastroEdita.php" method="POST">
         <label <?= $labelRa ?> for="ra">Ra:</label>
         <input type="<?= $typeRa ?>" name="ra" id="ra" value="<?= $student['Ra'] ?>" />
 

@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/estilo.css"/>
+    <link rel="stylesheet" href="../estilo/estilo.css"/>
     <title>Confimação</title>
 </head>
 <body>
     <?php
-        require_once './dao/DaoSubjects.php';
-        require_once './modelo/Subjects.php';
+        require_once '../dao/DaoSubjects.php';
+        require_once '../modelo/Subjects.php';
 
         $id = filter_input(INPUT_POST, 'id');
         $nome = filter_input(INPUT_POST, 'nome');

@@ -20,7 +20,7 @@
         </tr>
 
         <?php
-        require_once './dao/DaoStudent.php';
+        require_once 'dao/DaoStudent.php';
         $dao = new DaoStudent();
 
         $lista = $dao->lista();
@@ -44,6 +44,6 @@
     </table>
     <br>
     <a href="form.php?acao=1" id="cad">Cadastrar</a>
-    <a href="listagemDisc.php" id="disc">Ver Disciplinas</a>
+    <a href="./visao/listagemDisc.php" id="disc">Ver Disciplinas</a>
 </body>
 </html>
