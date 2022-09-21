@@ -17,6 +17,7 @@
             <th>Idade</th>
             <th>Cpf</th>
             <th>Ações</th>
+            <th>Ações</th>
         </tr>
 
         <?php

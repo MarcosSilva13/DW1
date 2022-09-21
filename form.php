@@ -10,13 +10,13 @@
 
 <body>
     <?php
-    require_once './dao/DaoStudent.php';
+    require_once 'dao/DaoStudent.php';
 
     $acao = filter_input(INPUT_GET, 'acao');
 
     switch ($acao) {
         case 1:
-            $h1 = 'Cadastro de Estudante';
+            $h1 = '***Cadastro de Estudante***';
             $labelRa = '';
             $typeRa = 'number';
             $typeNome = 'text';
@@ -33,7 +33,7 @@
             $lista = $dao->localiza($ra);
             $student = $lista[0];
 
-            $h1 = 'Edição de Estudante';
+            $h1 = '***Edição de Estudante***';
             $labelRa = 'hidden';
             $typeRa = 'hidden';
             $typeNome = 'text';

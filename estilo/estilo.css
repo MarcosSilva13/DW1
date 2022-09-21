@@ -16,7 +16,6 @@ td {
     text-align: center;
 }
 
-
 a {
     font-size: 20px;
     padding: 3px 5px;
@@ -50,7 +49,7 @@ a:hover, #env:hover {
 }
 
 #editar:hover {
-    background: rgb(247, 181, 0);
+    background: rgb(0, 181, 0);
 }
 
 .formulario label {
