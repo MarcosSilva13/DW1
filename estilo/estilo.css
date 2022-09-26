@@ -73,3 +73,25 @@ a:hover, #env:hover {
     color: #ffffff;
     cursor: pointer;
 }
+
+button {
+    margin-top: 20px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.botaoTipo1 {
+    background-color: brown;
+    color: cornsilk;
+}
+
+.botaoTipo2 {
+    background-color: cyan;
+    color: black;
+}
+
+.botaoTipo3 {
+    background-color: black;
+    color: white;
+}

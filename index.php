@@ -46,5 +46,17 @@
     <br>
     <a href="form.php?acao=1" id="cad">Cadastrar</a>
     <a href="./visao/listagemDisc.php" id="disc">Ver Disciplinas</a>
+    <br>
+    
+    <button class="botaoTipo1">Botão 1</button>
+    <button class="botaoTipo1">Botão 2</button>
+    <button class="botaoTipo2">Botão 3</button>
+    <button class="botaoTipo2">Botão 4</button>
+    <button class="botaoTipo3">Botão 5</button>
+
+    <p id="p1">Paragráfo com ID</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam autem, dolorem molestiae cumque placeat possimus est repellendus. 
+        Veniam deleniti vitae asperiores distinctio nulla ipsum? Quam architecto quisquam voluptate exercitationem!</p>
+
 </body>
 </html>
