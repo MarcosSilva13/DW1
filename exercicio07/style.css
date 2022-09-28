@@ -1,0 +1,67 @@
+header {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao1 {
+    border: 5px solid aqua;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    
+}
+
+.botao2 {
+    border: 5px solid red;
+    margin-left: 300px;
+    padding: 30px;
+    background-color: orange;
+    font-size: 18px;
+}
+
+.botao3 {
+    border: 5px solid green;
+    border-radius: 50px;
+    margin-right: 300px;
+    padding: 45px;
+    background: linear-gradient(to right, yellow, red);
+    width: 200px;
+    font-size: 18px;
+}
+
+.botao4 {
+    border: 5px solid;
+    border-top-color: yellow;
+    border-right-color: green;
+    border-bottom-color: blue;
+    border-left-color: palevioletred;
+    margin-left: 300px;
+    padding: 60px;
+    background-color: darkcyan;
+    font-size: 18px;
+    color: white;
+}
+
+.botao5 {
+    border: 5px solid blueviolet;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-right: 300px;
+    padding: 75px;
+    background-color: cyan;
+    font-size: 18px;
+}
