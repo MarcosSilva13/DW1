@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.campo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+h2 {
+    text-align: center;
+    color: #000;
+    margin: 0;
+}
+
+/*@media screen and (max-width: 1200px) {}*/
+
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+    .campo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .img {
+        width: 35%;
+    }
+    
+    img {
+        width: 150px;
+        height: 150px;
+    }
+}
