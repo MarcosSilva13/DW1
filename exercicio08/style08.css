@@ -1,21 +1,22 @@
 body {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 .campo {
+    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.img {
+.imagens {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-right: 10px;
+    /*padding: 5px;*/
+    margin: 5px;
 }
 
 img {
@@ -39,12 +40,30 @@ h2 {
         flex-wrap: wrap;
     }
 
-    .img {
-        width: 35%;
+    .imagens {
+        width: 40%;
     }
     
     img {
-        width: 150px;
-        height: 150px;
+        width: 280px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .campo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagens {
+        width: 90%;
+    }
+
+    img {
+        width: 380px;
+        height: 250px;
     }
 }
