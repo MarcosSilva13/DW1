@@ -1,4 +1,4 @@
-.retangulos {
+.paragrafos {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -7,7 +7,7 @@
 p {
     border: 1px solid #000;
     margin: 10px;
-    padding: 100px;
+    padding: 80px;
     font-size: 20px;
 }
 
