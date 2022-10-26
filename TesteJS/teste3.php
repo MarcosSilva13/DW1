@@ -5,28 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste Js</title>
 
-
-
     <script>
         window.addEventListener('load', () => {
-                fetch('./estados.php')
-                .then((response) => {
-                    return response.json();
-                    console.log(response);
-                })
-                .then((json) => {
-                    let est = document.getElementById('estado');
-                    for (let i = 0; i < json.length; i++) {
-                        let op = document.createElement('option');
-                        op.value = json[i].sigla;
-                        op.innerText = json[i].nome;
-                        est.append(op);
-                    }
-                })
-        });
+            fetch('./estados.php')
+            .then((response) => {
+                return response.json();
+                console.log(response);
+            })
+            .then((json) => {
+                let est = document.getElementById('estado');
+                for (let i = 0; i < json.length; i++) {
+                    let op = document.createElement('option');
+                    op.value = json[i].sigla;
+                    op.innerText = json[i].nome;
+                    est.append(op);
+                }
+            })
 
-
-        window.addEventListener('load', () => {
             document.getElementById('estado').addEventListener('change', () => {
                 const estado = document.getElementById('estado').value;
                 fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados/'+estado+'/municipios')
@@ -55,7 +50,7 @@
         <select name="estado" id="estado">
             <option value="">Selecione um Estado</option>
         </select>
-        <br>
+        <br><br>
         <label for="cidade">Cidade</label>
         <select name="cidade" id="cidade">
         </select>
