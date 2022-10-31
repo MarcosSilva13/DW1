@@ -41,11 +41,43 @@
                 })
                 
             });
+
+            document.querySelector('button').addEventListener('click', () => {
+                const dados = new FormData(document.forms[0]);
+                const config = {
+                    method: 'POST',
+                    body: dados
+                };
+
+                fetch('./cadastroTeste.php', config)
+                .then((response) => {
+                    return response.json();
+                })
+                .then((json) => {
+                    console.log(json);
+                    let p = document.querySelector('p');
+                    p.innerText = json.mensagem;
+                    if (json.status == 'ok') {
+                        p.style.color = 'blue';
+                    } else {
+                        p.style.color = 'red';
+                    }
+                })
+            });
+
+            document.forms[0].addEventListener('submit', (event) => {
+                event.preventDefault();
+            });
         });
+
     </script>
 </head>
 <body>
     <form action="">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome"><br><br>
+        <label for="endereco">Endereço</label>
+        <input type="text" name="endereco" id="endereco"><br><br>
         <label for="estado">Estado</label>
         <select name="estado" id="estado">
             <option value="">Selecione um Estado</option>
@@ -53,7 +85,10 @@
         <br><br>
         <label for="cidade">Cidade</label>
         <select name="cidade" id="cidade">
-        </select>
+        </select><br><br>
+        <button>Salvar</button>
     </form>
+
+    <p></p>
 </body>
 </html>
