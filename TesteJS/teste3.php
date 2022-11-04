@@ -43,8 +43,8 @@
             });
 
             document.querySelector('button').addEventListener('click', () => {
-                //const dados = new FormData(document.forms[0]);
-                const dados = new FormData();
+                const dados = new FormData(document.forms[0]);
+                //const dados = new FormData();
                 dados.append('nome', document.forms[0].nome);
                 dados.append('endereco', document.forms[0].endereco);
                 dados.append('estado', document.forms[0].estado);
